@@ -11,7 +11,7 @@ line 3
 line 4
 line 5
 ```
-the binary can be used as a line filter or with filenames as parameters
+the binary can be used as a line filter or with file names as parameters
 ```
 > cat test.txt | rsample -n=3 -header -seed=0
 header
@@ -19,7 +19,8 @@ line 1
 line 2
 line 4
 
-> rsample -n=4 -header -outfile=out.txt -seed=1 test.txt && cat out.txt
+> rsample -n=4 -header -outfile=out.txt -seed=1 test.txt
+> cat out.txt
 header
 line 1
 line 5
